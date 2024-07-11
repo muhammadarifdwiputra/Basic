@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+<p><input type="text" id="textbox1" placeholder="Username"></p>
+<p><input type="password" id="textbox2" placeholder="Password"></p>
+<button onclick="login()">Login</button>
+<button onclick="compare()">Compare</button>
+<button onclick="showDirection()">Direction</button>
+<p id="result"></p>
+<script>
+function login() {
+    var username = document.getElementById("textbox1").value;
+    var password = document.getElementById("textbox2").value;
+
+    if (username == "admin" && password == "pass") {
+        document.getElementById("result").innerText = "Login successful";
+    } else {
+        document.getElementById("result").innerText = "Login failed";
+    }
+}
+function compare() {
+    var username = document.getElementById("textbox1").value;
+    var password = document.getElementById("textbox2").value;
+
+    if (username == "admin" && password == "pass") {
+        document.getElementById("result").innerText = "compare successful";
+    } else {
+        document.getElementById("result").innerText = "Compare failed";
+    }
+}
+function showDirection() {
+    var username = document.getElementById("textbox1").value;
+    var password = document.getElementById("textbox2").value;
+
+    if (username == "admin" && password == "pass") {
+        document.getElementById("result").innerText =  "welcome admin, New day New task  ";
+    } else {
+        document.getElementById("result").innerText = "Failed";
+    }
+}
+</script>
+</body>
+</html>
